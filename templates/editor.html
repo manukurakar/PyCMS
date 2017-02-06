@@ -1,0 +1,14 @@
+<html>
+<head> </head>
+<title>Editor</title>
+<body>
+    <h4>This is editor</h4>
+        <form method="post">
+            {% csrf_token %}
+            Header In English<input type="text" name="head_english"><br>
+            Header In Local Language<input type="text" name="head_lc_lang"><br>
+            <textarea name="content"> </textarea>
+            <input type="submit" value="POST">
+        </form>
+</body>
+</html>
